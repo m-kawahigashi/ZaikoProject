@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditParts">
+
+    <TextView
+        android:id="@+id/edit_parts_title"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="@string/edit_parts_title"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/edit_input_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_parts_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp">
+
+            <!--    部品番号部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_number"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_number"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!--    部品名部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_name"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="編集前の名前を表示させる予定"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <!--    現在庫数部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_current_number"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_current_number"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!--    使用個数部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_used"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_used"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="使用数を入力"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <!--    ロット部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_lot"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_lot"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="ロット数を入力"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <!--    リードタイム部分     -->
+            <LinearLayout
+                android:id="@+id/edit_parts_readTime"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parts_readTime"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="リードタイムを入力"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <!--    戻るボタン部分     -->
+            <LinearLayout
+                android:id="@+id/edit_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/edit_update_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#3F51B5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/update_button_text" />
+                <Button
+                    android:id="@+id/edit_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#3F51B5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/back_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

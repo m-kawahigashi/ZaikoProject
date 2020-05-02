@@ -1,0 +1,102 @@
+<resources>
+
+    // ログインビュー（デフォルト設定）
+    <string name="app_name">ZaikoProject</string>
+    <string name="title_activity_login">ログイン</string>
+    <string name="prompt_user_id">ユーザーID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">ログイン</string>
+    <string name="action_sign_in_short">サインイン</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    // MainActivity
+    <string name="project_name">在庫管理システム</string>
+    <string name="login_button">ログインする</string>
+
+    // MenuActivity
+    <string name="menu_title">メニュー</string>
+    <string name="zaiko_search">在庫検索</string>
+    <string name="zaiko_register">在庫登録</string>
+    <string name="user_register">ユーザー登録</string>
+    <string name="mail_submit">メール送信</string>
+
+    // SearchPartsActivity
+    <string name="search_parts_title">在庫検索</string>
+    <string name="search_number_msg">部品番号  ：</string>
+    <string name="search_hint_message">番号で入力</string>
+    <string name="search_button">検索</string>
+    <string name="search_register">検索結果 ：</string>
+    <string name="search_count">件</string>
+    <string name="search_title_id">　No　</string>
+    <string name="search_title_parts_name">部品名</string>
+    <string name="search_title_lot">ロット</string>
+    <string name="search_title_readTime">リードタイム</string>
+    <string name="search_title_current_number">個数</string>
+    <string name="search_title_edit">編集</string>
+    <string name="back_button">戻る</string>
+    <string-array name="Array_parts_name">
+        <item>1 ねじ 5 3 10 編集</item>
+        <item>2 ねじ2 5 3 10 編集</item>
+        <item>3 ねじ3 5 3 10 編集</item>
+        <item>4 ねじ4 5 3 10 編集</item>
+        <item>5 ねじ5 5 3 10 編集</item>
+        <item>6 ねじ6 5 3 10 編集</item>
+        <item>7 ねじ7 5 3 10 編集</item>
+        <item>8 ねじ8 5 3 10 編集</item>
+        <item>9 ねじ9 5 3 10 編集</item>
+    </string-array>
+
+    // EditPartsActivity
+    <string name="edit_parts_title">在庫編集</string>
+    <string name="parts_number">部品番号：</string>
+    <string name="parts_name">部品名：</string>
+    <string name="parts_current_number">現在庫数：</string>
+    <string name="parts_used">使用個数：</string>
+    <string name="parts_lot">ロット：</string>
+    <string name="parts_readTime">リードタイム：</string>
+    <string name="update_button_text">更新</string>
+
+    // RegisterPartsActivity
+    <string name="register_parts_title">在庫登録</string>
+    <string name="hint_register_number">新規部品番号を入力</string>
+    <string name="hint_register_name">部品名を入力</string>
+    <string name="hint_register_current_number">在庫数量を入力</string>
+    <string name="hint_register_lot">ロット数を入力</string>
+    <string name="hint_register_readTime">リードタイムを入力</string>
+    <string name="register_button">登録</string>
+
+    // RegisterUsersActivity
+    <string name="register_users_title">ユーザー登録</string>
+    <string name="register_users_id">ユーザーID：</string>
+    <string name="hint_users_id">IDを入力</string>
+    <string name="register_users_name">ユーザー名：</string>
+    <string name="hint_users_name">名前を入力</string>
+    <string name="register_users_password">パスワード：</string>
+    <string name="hint_users_password">パスワードを入力</string>
+    <string name="register_users_again_password">再入力：</string>
+    <string name="hint_users_again_password">パスワードを再入力</string>
+    <string name="register_users_Email">Eメールアドレス：</string>
+    <string name="hint_users_Email">メールアドレスを入力</string>
+    <string name="register_users_office">事業所：</string>
+    <string name="hint_users_office">事業所を入力</string>
+    <string name="register_users_department">所属部署：</string>
+    <string name="hint_users_department">所属部署を入力</string>
+    <string name="register_users_authority">権　限</string>
+    <string name="authority_general">一般</string>
+    <string name="authority_admin">管理者</string>
+
+    // EmailActivity
+    <string name="Email_send_title">メール送信</string>
+    <string name="note_text">*　は必須入力</string>
+    <string name="Email_address">メール送信先 *</string>
+    <string name="hint_Email_address">メールアドレスを入力</string>
+    <string name="Email_title">メールタイトル *</string>
+    <string name="hint_Email_title">タイトルを入力</string>
+    <string name="Email_text">メール本文 *</string>
+    <string name="hint_Email_text">本文を入力</string>
+    <string name="Email_send_button">送信</string>
+
+</resources>

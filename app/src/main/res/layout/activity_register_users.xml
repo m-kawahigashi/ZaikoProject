@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUsers">
+
+    <TextView
+        android:id="@+id/register_users_title"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="@string/register_users_title"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/register_users_input_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_users_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp">
+
+            <!--    ユーザーID     -->
+            <LinearLayout
+                android:id="@+id/register_users_number"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_id"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_register_number"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <!--    ユーザー名     -->
+            <LinearLayout
+                android:id="@+id/register_users_name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_name"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_name"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <!--    パスワード     -->
+            <LinearLayout
+                android:id="@+id/register_users_password"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_password"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_password"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <!--    パスワード再入力     -->
+            <LinearLayout
+                android:id="@+id/register_users_again_password"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_again_password"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_again_password"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <!--    Eメール     -->
+            <LinearLayout
+                android:id="@+id/register_users_Email"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_Email"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_Email"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"/>
+            </LinearLayout>
+
+            <!--    事業所     -->
+            <LinearLayout
+                android:id="@+id/register_users_office"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_office"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_office"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <!--    所属部署     -->
+            <LinearLayout
+                android:id="@+id/register_users_department"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_users_department"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_users_department"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <!--   権限   -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/register_users_authority"
+                android:textSize="18sp" />
+
+            <!--    権限ラジオボタン   -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+                <!--   一般   -->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:textSize="18sp"
+                    android:text="@string/authority_general" />
+                <!--   管理者   -->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18sp"
+                    android:text="@string/authority_admin"
+                    android:checked="true" />
+            </RadioGroup>
+
+            <!--    ボタン部分     -->
+            <LinearLayout
+                android:id="@+id/register_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#3F51B5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/register_button" />
+                <Button
+                    android:id="@+id/register_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#3F51B5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/back_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
